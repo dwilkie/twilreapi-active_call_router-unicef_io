@@ -20,6 +20,11 @@ And then execute:
 
 To configure [Twilreapi](https://github.com/dwilkie/twilreapi) to use `Twilreapi::ActiveBiller::UnicefIO::CallRouter`, set the environment variable `ACTIVE_CALL_ROUTER_CLASS_NAME=Twilreapi::ActiveCallRouter::UnicefIO::CallRouter`
 
+The following environment variables can be set to determine the call routing logic:
+
+* `TWILREAPI_ACTIVE_CALL_ROUTER_UNICEF_IO_DEFAULT_CALLER_ID`
+  * Set this value to override the caller id
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
