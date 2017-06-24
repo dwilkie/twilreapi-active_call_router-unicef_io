@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'twilreapi/active_call_router/unicef_io/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "twilreapi-active_call_router-unicef-io"
+  spec.name          = "twilreapi-active_call_router-unicef_io"
   spec.version       = Twilreapi::ActiveCallRouter::UnicefIO::VERSION
   spec.authors       = ["David Wilkie"]
   spec.email         = ["dwilkie@gmail.com"]
