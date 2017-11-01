@@ -68,6 +68,18 @@ describe Twilreapi::ActiveCallRouter::UnicefIO::CallRouter do
       it { assert_routing_instructions! }
     end
 
+    context "Sierra Leone" do
+      let(:asserted_host) { "freeswitch-private.internal.unicef.io" }
+      let(:asserted_address) { "#{asserted_destination}@#{asserted_host}" }
+      let(:asserted_dial_string_path) { "external/#{asserted_address}" }
+
+      context "Africell" do
+        let(:africell_number)  { "+23230234567" }
+        let(:destination) { africell_number }
+        it { assert_routing_instructions! }
+      end
+    end
+
     context "Somalia" do
       let(:asserted_host) { "196.201.207.191" }
       let(:asserted_address) { "#{asserted_destination}@#{asserted_host}" }
