@@ -1,15 +1,15 @@
 # Twilreapi::ActiveCallRouter::PinCambodia
 
-[![Build Status](https://travis-ci.org/dwilkie/twilreapi-active_call_router-unicef_io.svg?branch=master)](https://travis-ci.org/dwilkie/twilreapi-active_call_router-unicef_io)
+[![Build Status](https://travis-ci.org/somleng/twilreapi-active_call_router-unicef_io.svg?branch=master)](https://travis-ci.org/somleng/twilreapi-active_call_router-unicef_io)
 
-This gem contains call routing logic for [somleng.unicef.io](https://somleng.unicef.io) for [Twilreapi.](https://github.com/dwilkie/twilreapi)
+This gem contains call routing logic for [somleng.unicef.io](https://somleng.unicef.io) for [Twilreapi.](https://github.com/somleng/twilreapi)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'twilreapi-active_call_router-unicef_io', :github => "dwilkie/twilreapi-active_call_router-unicef_io"
+gem 'twilreapi-active_call_router-unicef_io', :github => "somleng/twilreapi-active_call_router-unicef_io"
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 ## Configuration
 
-To configure [Twilreapi](https://github.com/dwilkie/twilreapi) to use `Twilreapi::ActiveBiller::UnicefIO::CallRouter`, set the environment variable `ACTIVE_CALL_ROUTER_CLASS_NAME=Twilreapi::ActiveCallRouter::UnicefIO::CallRouter`
+To configure [Twilreapi](https://github.com/somleng/twilreapi) to use `Twilreapi::ActiveBiller::UnicefIO::CallRouter`, set the environment variable `ACTIVE_CALL_ROUTER_CLASS_NAME=Twilreapi::ActiveCallRouter::UnicefIO::CallRouter`
 
 The following environment variables can be set to determine the call routing logic:
 
@@ -33,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/dwilkie/twilreapi-active_call_router-unicef_io.
+Bug reports and pull requests are welcome on GitHub at https://github.com/somleng/twilreapi-active_call_router-unicef_io.
 
 ## License
 
