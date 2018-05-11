@@ -28,11 +28,13 @@ class Twilreapi::ActiveCallRouter::UnicefIO::CallRouter < Twilreapi::ActiveCallR
     gateway_name = gateway_configuration["name"]
     gateway_host = gateway_configuration["host"]
     address = normalized_destination
-    address = Phony.format(
-      address,
-      :format => :national,
-      :spaces => ""
-    ) if gateway_configuration["prefix"] == false
+    if gateway_configuration["prefix"] == false
+      address = Phony.format(
+        address,
+        format: :national,
+        spaces: ""
+      )
+    end
 
     if gateway_name
       dial_string_path = "gateway/#{gateway_name}/#{address}"
@@ -46,9 +48,9 @@ class Twilreapi::ActiveCallRouter::UnicefIO::CallRouter < Twilreapi::ActiveCallR
     }
 
     if dial_string_path
-      routing_instructions.merge!("dial_string_path" => dial_string_path)
+      routing_instructions["dial_string_path"] = dial_string_path
     else
-      routing_instructions.merge!("disable_originate" => "1")
+      routing_instructions["disable_originate"] = "1"
     end
 
     routing_instructions

@@ -32,3 +32,11 @@ sl:
         gateways:
           default:
             host: "freeswitch-private.internal.unicef.io"
+br:
+  operators:
+    mundivox:
+      prefixes: "*"
+      metadata:
+        gateways:
+          default:
+            host: "187.102.153.186"
