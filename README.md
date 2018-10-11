@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/somleng/twilreapi-active_call_router-unicef_io.svg?branch=master)](https://travis-ci.org/somleng/twilreapi-active_call_router-unicef_io)
 
+## DEPRECATION NOTICE
+
+This has been merged into [Twilreapi](https://github.com/somleng/twilreapi) and is no longer maintained
+
 This gem contains call routing logic for [somleng.unicef.io](https://somleng.unicef.io) for [Twilreapi.](https://github.com/somleng/twilreapi)
 
 ## Installation
@@ -22,8 +26,8 @@ To configure [Twilreapi](https://github.com/somleng/twilreapi) to use `Twilreapi
 
 The following environment variables can be set to determine the call routing logic:
 
-* `TWILREAPI_ACTIVE_CALL_ROUTER_UNICEF_IO_DEFAULT_CALLER_ID`
-  * Set this value to override the caller id
+-   `TWILREAPI_ACTIVE_CALL_ROUTER_UNICEF_IO_DEFAULT_CALLER_ID`
+    -   Set this value to override the caller id
 
 ## Development
 
@@ -33,9 +37,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/somleng/twilreapi-active_call_router-unicef_io.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/somleng/twilreapi-active_call_router-unicef_io>.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
